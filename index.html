@@ -5,77 +5,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abderrahmane Benfanich | PhD Candidate</title>
     <style>
-        :root { --primary: #800000; --text: #333; --bg: #f4f4f4; }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
-        .container { max-width: 900px; margin: 40px auto; background: white; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
-        header { border-bottom: 2px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; color: var(--primary); font-size: 2.5em; }
-        h2 { border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-top: 40px; color: var(--primary); }
-        .contact-info { margin-top: 10px; font-size: 0.9em; color: #666; }
-        .project, .pub { margin-bottom: 20px; }
-        .date { float: right; color: #888; font-style: italic; }
-        .tag { background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; margin-right: 5px; }
-        ul { padding-left: 20px; }
-        @media (max-width: 600px) { .container { margin: 10px; padding: 20px; } .date { float: none; display: block; margin-bottom: 5px; } }
+        :root {
+            --primary: #8f001a; /* uOttawa Garnet */
+            --bg-color: #f8f9fa;
+            --text-main: #2c3e50;
+            --text-light: #5a6c7d;
+            --sidebar-bg: #ffffff;
+            --border-color: #e1e8ed;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--sidebar-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            overflow: hidden;
+        }
+
+        /* --- Sidebar Styles --- */
+        .sidebar {
+            background-color: var(--primary);
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .sidebar h1 {
+            font-size: 2.2em;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-top: 0;
+            color: #ffcccc;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-list { list-style: none; padding: 0; margin-bottom: 40px; font-size: 0.9em; }
+        .contact-list li { margin-bottom: 10px; }
+        .contact-list a { color: white; text-decoration: none; }
+        .contact-list a:hover { text-decoration: underline; }
+
+        .sidebar-section { margin-bottom: 35px; }
+        .sidebar-section h3 {
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 5px;
+        }
+        
+        .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+        .tag {
+            background: rgba(255,255,255,0.15);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+
+        /* --- Main Content Styles --- */
+        .main-content {
+            padding: 50px;
+            background: white;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .item { margin-bottom: 25px; }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .item-title { font-weight: 600; font-size: 1.1em; color: var(--text-main); }
+        .item-subtitle { font-style: italic; color: var(--text-light); font-size: 0.95em; }
+        .item-date { color: var(--primary); font-size: 0.9em; font-weight: 500; min-width: 130px; text-align: right; }
+        
+        .item p, .item ul { margin-top: 5px; font-size: 0.95em; color: #444; }
+        .item ul { padding-left: 20px; }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            .resume-container { grid-template-columns: 1fr; }
+            .item-header { flex-direction: column; }
+            .item-date { text-align: left; margin-top: 5px; }
+            .main-content { padding: 30px; }
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
+<div class="resume-container">
+    
+    <aside class="sidebar">
         <h1>Abderrahmane Benfanich</h1>
-        <div class="contact-info">
-            Ottawa, ON | abenf099@uottawa.ca | PhD Candidate at University of Ottawa
-        </div>
-    </header>
+        <h2>PhD Candidate in Mathematics</h2>
+        
+        <ul class="contact-list">
+            <li>📍 Ottawa, ON, Canada</li>
+            <li>📞 (873) 353-9127</li>
+            <li>✉️ <a href="mailto:abenf099@uottawa.ca">abenf099@uottawa.ca</a></li>
+        </ul>
 
-    <section id="about">
-        <h2>Research Focus</h2>
-        <p>
-            I am a PhD candidate specializing in the <strong>theoretical and numerical analysis of infiltration models</strong>. 
-            My work primarily involves the <strong>Richards equations</strong> and higher-order extensions using <strong>Finite Element Methods</strong> to predict water movement in porous media.
-        </p>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="project">
-            <span class="date">2024 - Present</span>
-            <strong>Ph.D. in Mathematics and Statistics</strong><br>
-            University of Ottawa
+        <div class="sidebar-section">
+            <h3>Technical Skills</h3>
+            <div class="tag-cloud">
+                <span class="tag">Python</span>
+                <span class="tag">C++</span>
+                <span class="tag">FreeFem++</span>
+                <span class="tag">LaTeX</span>
+                <span class="tag">Numerical Analysis</span>
+                <span class="tag">PDEs</span>
+                <span class="tag">Finite Element Methods</span>
+            </div>
         </div>
-        <div class="project">
-            <span class="date">2023 - 2024</span>
-            <strong>Master's in Mathematics and Statistics</strong> (Fast-tracked to PhD)<br>
-            University of Ottawa
-        </div>
-    </section>
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <div class="pub">
-            <strong>Mathematical analysis for a doubly degenerate parabolic equation: Application to the Richards equation</strong><br>
-            <em>Journal of Differential Equations</em> (Submitted 2026). arXiv:2602.19037
+        <div class="sidebar-section">
+            <h3>Languages</h3>
+            <div class="tag-cloud">
+                <span class="tag">English</span>
+                <span class="tag">French</span>
+            </div>
         </div>
-        <div class="pub">
-            <strong>A finite element method using a bounded auxiliary variable for solving the Richards equation</strong><br>
-            <em>Journal of Computational Physics</em> (Submitted 2025)
+
+        <div class="sidebar-section">
+            <h3>Extracurriculars</h3>
+            <p style="font-size: 0.9em; margin-bottom: 10px;"><strong>Math Help Center Tutor</strong><br>Facilitating collaborative learning for core concepts.</p>
+            <p style="font-size: 0.9em;"><strong>Athletics: Track & Field</strong><br>Competitive level Discus and Shot Put.</p>
         </div>
-    </section>
+    </aside>
 
-    <section id="skills">
-        <h2>Technical Skills & Interests</h2>
-        <p>
-            <strong>Languages:</strong> <span class="tag">Python</span> <span class="tag">C++</span> <span class="tag">FreeFem++</span> <span class="tag">LaTeX</span>
-        </p>
-        <p>
-            <strong>Athletics:</strong> Outside of mathematics, I am a competitive <strong>Track and Field</strong> athlete specializing in <strong>Discus and Shot Put</strong>.
-        </p>
-    </section>
+    <main class="main-content">
+        
+        <section>
+            <h3 class="section-title">Research Focus</h3>
+            <p>Developing advanced numerical methods for the Richards equation and its higher-order extensions. My work focuses on modeling water infiltration in porous media to better predict pollutant movement and prevent groundwater pollution, incorporating diffusion and dispersion effects.</p>
+        </section>
 
-    <footer style="margin-top: 50px; font-size: 0.8em; color: #999; text-align: center;">
-        &copy; 2026 Abderrahmane Benfanich. Built with GitHub Pages.
-    </footer>
+        <section>
+            <h3 class="section-title">Education</h3>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Ph.D. in Mathematics and Statistics</span>
+                    <span class="item-date">09/2024 - Present</span>
+                </div>
+                <div class="item-subtitle">University of Ottawa, ON</div>
+                <p>Focus: Theoretical and numerical analysis of infiltration models (Richards equations) and higher-order extensions using Finite Element Methods.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Master's in Mathematics and Statistics</span>
+                    <span class="item-date">09/2023 - 09/2024</span>
+                </div>
+                <div class="item-subtitle">University of Ottawa, ON</div>
+                <p>Fast-tracked to Ph.D. program due to research excellence. <br><em>Report: Theoretical and Numerical Analysis of Infiltration Models.</em></p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor's in Mathematics and Applications</span>
+                    <span class="item-date">09/2020 - 06/2023</span>
+                </div>
+                <div class="item-subtitle">Cadi Ayyad University, Marrakech, Morocco</div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">Publications</h3>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Mathematical analysis for a doubly degenerate parabolic equation: Application to the Richards equation</span>
+                    <span class="item-date">Submitted 02/2026</span>
+                </div>
+                <div class="item-subtitle">Benfanich, A., Bourgault, Y., & Beljadid, A. — Journal of Differential Equations</div>
+                <p>arXiv:2602.19037.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">A finite element method using a bounded auxiliary variable for solving the Richards equation</span>
+                    <span class="item-date">Submitted 09/2025</span>
+                </div>
+                <div class="item-subtitle">Benfanich, A., Bourgault, Y., & Beljadid, A. — Journal of Computational Physics</div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">Experience & Projects</h3>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Research & Teaching Assistant</span>
+                    <span class="item-date">06/2023 - Present</span>
+                </div>
+                <div class="item-subtitle">University of Ottawa, ON</div>
+                <ul>
+                    <li>Conducting theoretical and numerical research on porous media flow for graduate programs.</li>
+                    <li>Organize discussion groups, grade exams, and provide personalized academic support to students.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">Conferences & Training</h3>
+            <ul style="padding-left: 20px; font-size: 0.95em;">
+                <li style="margin-bottom: 8px;"><strong>SIAM/CAIMS Joint Conference</strong> (07/2025-08/2025): Delivered a talk on research findings as part of a mini-symposium.</li>
+                <li style="margin-bottom: 8px;"><strong>Compute Ontario School</strong> (06/2025-07/2025): Artificial Neural Networks and machine learning concepts.</li>
+                <li style="margin-bottom: 8px;"><strong>Summer School in Mathematics</strong>, Queen's University (06/2024-07/2024): Circulation models, reinforcement learning, and SDEs.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="section-title">Awards & Distinctions</h3>
+            <ul style="padding-left: 20px; font-size: 0.95em;">
+                <li><strong>International Doctoral Scholarship</strong> (09/2024) - Awarded for research excellence.</li>
+                <li><strong>Admission Scholarship</strong> (09/2024) - Awarded upon admission to the Ph.D. program.</li>
+                <li><strong>Supervisor's Scholarship & Partial Exemption Scholarship</strong> (2023-2024).</li>
+            </ul>
+        </section>
+
+    </main>
 </div>
 
 </body>
