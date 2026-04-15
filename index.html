@@ -3,32 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PhD candidate in Mathematics at the University of Ottawa. Research on Richards equation, porous media flow, finite element methods, and mathematical visualization.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abderrahmane Benfanich | PhD Candidate">
+    <meta property="og:description" content="Research portfolio and mathematical visualizations by Abderrahmane Benfanich.">
+    <meta property="og:url" content="https://abderrahmane-benfanich.github.io/index.html">
+    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/favicon.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Abderrahmane Benfanich | PhD Candidate">
+    <meta name="twitter:description" content="Research portfolio and mathematical visualizations by Abderrahmane Benfanich.">
+    <link rel="canonical" href="https://abderrahmane-benfanich.github.io/index.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Abderrahmane Benfanich | PhD Candidate</title>
-    <style>
-        :root {
-            --primary: #8f001a; 
-            --bg-color: #f8f9fa;
-            --text-main: #2c3e50;
-            --text-light: #5a6c7d;
-            --sidebar-bg: #ffffff;
-            --border-color: #e1e8ed;
-        }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-main); background-color: var(--bg-color); margin: 0; padding: 20px; }
-        .navbar { background-color: var(--primary); max-width: 1100px; margin: 0 auto 20px auto; padding: 15px 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 30px; }
-        .navbar a { color: white; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
-        .navbar a:hover, .navbar a.active { background-color: rgba(255, 255, 255, 0.2); }
-        .content-wrapper { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
-        .card { background: var(--sidebar-bg); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 30px; }
-        h1 { margin-top: 0; color: var(--primary); font-size: 2em; line-height: 1.2; }
-        h2 { font-size: 1.2em; font-weight: 400; color: var(--text-light); margin-bottom: 20px; }
-        .section-title { color: var(--primary); font-size: 1.5em; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; margin-top: 0; margin-bottom: 20px; }
-        .contact-list { list-style: none; padding: 0; font-size: 0.95em; }
-        .contact-list li { margin-bottom: 12px; }
-        .contact-list a { color: var(--primary); text-decoration: none; font-weight: bold; }
-        .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-        .tag { background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.85em; }
-        @media (max-width: 800px) { .content-wrapper { grid-template-columns: 1fr; } .navbar { flex-wrap: wrap; gap: 10px; } }
-    </style>
 </head>
 <body>
 
@@ -38,36 +29,79 @@
         <a href="animations.html">Abdo Does Maths</a>
     </nav>
 
-    <div class="content-wrapper">
+    <div class="content-wrapper layout-home">
         <aside class="card">
-            <h1>Abderrahmane Benfanich</h1>
-            <h2>PhD Candidate in Mathematics</h2>
+            <h1 style="margin: 0; color: var(--primary-dark);">Abderrahmane Benfanich</h1>
+            <p class="muted" style="margin-top: 8px;">PhD Candidate in Mathematics, University of Ottawa</p>
             <ul class="contact-list">
                 <li>📍 Ottawa, ON, Canada</li>
                 <li>📞 (873) 353-9127</li>
                 <li>✉️ <a href="mailto:abenf099@uottawa.ca">abenf099@uottawa.ca</a></li>
             </ul>
-            <div style="margin-top: 25px;">
-                <h3 style="font-size: 1em; margin-bottom: 5px;">Technical Skills</h3>
+
+            <h2 class="block-title">Profiles & CV</h2>
+            <div class="inline-actions">
+                <a class="button" href="research.html#cv-download">Download CV</a>
+                <a class="button" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a class="button" href="https://orcid.org/" target="_blank" rel="noopener noreferrer">ORCID</a>
+                <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+
+            <h2 class="block-title">Technical Skills</h2>
                 <div class="tag-cloud">
                     <span class="tag">Python</span><span class="tag">C++</span><span class="tag">FreeFem++</span><span class="tag">LaTeX</span><span class="tag">PDEs</span>
                 </div>
-            </div>
-            <div style="margin-top: 25px;">
-                <h3 style="font-size: 1em; margin-bottom: 5px;">Interests</h3>
+
+            <h2 class="block-title">Interests</h2>
                 <div class="tag-cloud">
                     <span class="tag">Math Animations</span><span class="tag">Track & Field (Discus/Shot Put)</span>
                 </div>
-            </div>
         </aside>
 
-        <main class="card">
-            <h3 class="section-title">Welcome</h3>
+        <main>
+            <section class="card hero">
+                <h2 class="hero-title">Modeling Flow in Porous Media, One Equation at a Time</h2>
+                <p class="hero-subtitle">I work on the mathematical analysis and finite element approximation of the Richards equation and higher-order extensions, with applications to infiltration and contaminant transport.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="research.html">View Research</a>
+                    <a class="button" href="animations.html">Watch Animations</a>
+                </div>
+            </section>
+
+            <section class="card" style="margin-top: 20px;">
+            <h2 class="section-title">Welcome</h2>
             <p>I am a PhD candidate in Mathematics and Statistics at the University of Ottawa. My academic focus is on the theoretical and numerical analysis of infiltration models.</p>
             <p>Specifically, I develop advanced numerical methods for the Richards equation and its higher-order extensions. This work models water infiltration in porous media to better predict pollutant movement and prevent groundwater contamination, incorporating both diffusion and dispersion effects.</p>
             <p>Alongside my research, I am actively involved in mathematical education as a Teaching Assistant, a tutor at the Math Help Center, and through my visual project, "Abdo does maths", where I animate abstract mathematical concepts.</p>
+            </section>
         </main>
     </div>
+
+    <footer class="site-footer">
+        © 2026 Abderrahmane Benfanich · Last updated: April 2026 · Contact: <a href="mailto:abenf099@uottawa.ca">abenf099@uottawa.ca</a>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abderrahmane Benfanich",
+      "jobTitle": "PhD Candidate in Mathematics",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Ottawa"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "email": "mailto:abenf099@uottawa.ca",
+      "telephone": "+1-873-353-9127",
+      "url": "https://abderrahmane-benfanich.github.io/index.html"
+    }
+    </script>
 
 </body>
 </html>

@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mathematical animations by Abderrahmane Benfanich: finite element simulation, PDE dynamics, and fractal visualizations from Abdo does maths.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abderrahmane Benfanich | Animations">
+    <meta property="og:description" content="Watch math animations and visual explainers covering PDEs, FEM, and fractal geometry.">
+    <meta property="og:url" content="https://abderrahmane-benfanich.github.io/animations.html">
+    <meta property="og:image" content="https://abderrahmane-benfanich.github.io/favicon.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Abderrahmane Benfanich | Animations">
+    <meta name="twitter:description" content="Watch math animations and visual explainers covering PDEs, FEM, and fractal geometry.">
+    <link rel="canonical" href="https://abderrahmane-benfanich.github.io/animations.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Abderrahmane Benfanich | Animations</title>
-    <style>
-        /* Exact same CSS */
-        :root { --primary: #8f001a; --bg-color: #f8f9fa; --text-main: #2c3e50; --text-light: #5a6c7d; --sidebar-bg: #ffffff; --border-color: #e1e8ed; }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-main); background-color: var(--bg-color); margin: 0; padding: 20px; }
-        .navbar { background-color: var(--primary); max-width: 1100px; margin: 0 auto 20px auto; padding: 15px 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 30px; }
-        .navbar a { color: white; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
-        .navbar a:hover, .navbar a.active { background-color: rgba(255, 255, 255, 0.2); }
-        .content-wrapper { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 20px; }
-        .card { background: var(--sidebar-bg); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 40px; text-align: center; }
-        .section-title { color: var(--primary); font-size: 1.5em; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; margin-top: 0; margin-bottom: 20px; text-align: left; }
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
-        .video-box { background: #eee; padding: 20px; border-radius: 8px; }
-        .tiktok-frame { position: relative; width: 100%; padding-top: 177.78%; border-radius: 8px; overflow: hidden; background: #000; }
-        .tiktok-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-    </style>
 </head>
 <body>
 
@@ -30,13 +31,17 @@
 
     <div class="content-wrapper">
         <main class="card">
-            <h3 class="section-title">Visualizing Mathematics</h3>
-            <p style="text-align: left;">Through my content channel, <strong>"Abdo does maths,"</strong> I create animations that bring abstract mathematical concepts to life.</p>
+            <h1 class="section-title">Visualizing Mathematics</h1>
+            <p class="muted" style="text-align: left;">Through my content channel, <strong>"Abdo does maths,"</strong> I create animations that turn abstract mathematical concepts into visual narratives.</p>
             
             <div class="grid-container">
                 <div class="video-box">
-                <h4>Heat Equation (2D FEM)</h4>
-                <p>Visualizing diffusion through a sinusoidal channel from zero temperature to a full heat wave.</p>
+                <div class="video-meta">
+                    <span class="tag">PDE · FEM</span>
+                    <span class="video-date">Published 2024</span>
+                </div>
+                <h3>Heat Equation (2D FEM)</h3>
+                <p>Diffusion evolves through a sinusoidal channel as a heated boundary drives the system from rest to a dynamic temperature field.</p>
                     <div class="tiktok-frame">
                         <iframe
                             src="https://www.tiktok.com/player/v1/7622740439497493781"
@@ -48,12 +53,16 @@
                     </div>
                 </div>
                 <div class="video-box">
-                    <h4>Mandelbrot set</h4>
-                    <p>Exploring fractal geometry and recursive sequences.</p>
+                    <div class="video-meta">
+                        <span class="tag">Fractals · Complex Dynamics</span>
+                        <span class="video-date">Published 2024</span>
+                    </div>
+                    <h3>Mandelbrot Set</h3>
+                    <p>A zoom through the Mandelbrot landscape highlights recursive structure, self-similarity, and repeated geometry at different scales.</p>
                     <div class="tiktok-frame">
                         <iframe
                             src="https://www.tiktok.com/player/v1/7607309494258896148"
-                            title="Fractal geometry and recursive sequences"
+                            title="Mandelbrot set visualization"
                             loading="lazy"
                             allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
                             allowfullscreen>
@@ -63,6 +72,40 @@
             </div>
         </main>
     </div>
+
+        <footer class="site-footer">
+                © 2026 Abderrahmane Benfanich · Last updated: April 2026 · Contact: <a href="mailto:abenf099@uottawa.ca">abenf099@uottawa.ca</a>
+        </footer>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "VideoObject",
+                    "name": "Heat Equation (2D FEM)",
+                    "description": "Finite element visualization of heat diffusion through a sinusoidal channel.",
+                    "embedUrl": "https://www.tiktok.com/player/v1/7622740439497493781",
+                    "thumbnailUrl": "https://abderrahmane-benfanich.github.io/favicon.svg",
+                    "publisher": {
+                        "@type": "Person",
+                        "name": "Abderrahmane Benfanich"
+                    }
+                },
+                {
+                    "@type": "VideoObject",
+                    "name": "Mandelbrot Set",
+                    "description": "Fractal geometry and recursive structure in complex dynamics.",
+                    "embedUrl": "https://www.tiktok.com/player/v1/7607309494258896148",
+                    "thumbnailUrl": "https://abderrahmane-benfanich.github.io/favicon.svg",
+                    "publisher": {
+                        "@type": "Person",
+                        "name": "Abderrahmane Benfanich"
+                    }
+                }
+            ]
+        }
+        </script>
 
 </body>
 </html>
