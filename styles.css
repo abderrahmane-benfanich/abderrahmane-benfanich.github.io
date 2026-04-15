@@ -32,25 +32,6 @@ body {
     padding: 20px;
 }
 
-.skip-link {
-    position: absolute;
-    left: 12px;
-    top: -52px;
-    padding: 10px 14px;
-    background: #ffffff;
-    color: var(--primary-dark);
-    border: 2px solid var(--primary);
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    z-index: 2000;
-    transition: top 0.2s ease;
-}
-
-.skip-link:focus-visible {
-    top: 12px;
-}
-
 h1,
 h2,
 h3,
