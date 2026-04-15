@@ -3,81 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abderrahmane Benfanich | Home</title>
+    <title>Abderrahmane Benfanich | PhD Candidate</title>
     <style>
         :root {
-            --primary: #8f001a; /* uOttawa Garnet */
+            --primary: #8f001a; 
             --bg-color: #f8f9fa;
             --text-main: #2c3e50;
             --text-light: #5a6c7d;
             --sidebar-bg: #ffffff;
             --border-color: #e1e8ed;
         }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* --- Navigation Bar --- */
-        .navbar {
-            background-color: var(--primary);
-            max-width: 1100px;
-            margin: 0 auto 20px auto;
-            padding: 15px 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        .navbar a:hover, .navbar a.active {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /* --- Layout --- */
-        .content-wrapper {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: 20px;
-        }
-
-        .card {
-            background: var(--sidebar-bg);
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            padding: 30px;
-        }
-
-        /* --- Sidebar & Typography --- */
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-main); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .navbar { background-color: var(--primary); max-width: 1100px; margin: 0 auto 20px auto; padding: 15px 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 30px; }
+        .navbar a { color: white; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
+        .navbar a:hover, .navbar a.active { background-color: rgba(255, 255, 255, 0.2); }
+        .content-wrapper { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
+        .card { background: var(--sidebar-bg); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 30px; }
         h1 { margin-top: 0; color: var(--primary); font-size: 2em; line-height: 1.2; }
         h2 { font-size: 1.2em; font-weight: 400; color: var(--text-light); margin-bottom: 20px; }
         .section-title { color: var(--primary); font-size: 1.5em; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; margin-top: 0; margin-bottom: 20px; }
         .contact-list { list-style: none; padding: 0; font-size: 0.95em; }
         .contact-list li { margin-bottom: 12px; }
         .contact-list a { color: var(--primary); text-decoration: none; font-weight: bold; }
-
-        @media (max-width: 800px) {
-            .content-wrapper { grid-template-columns: 1fr; }
-            .navbar { flex-wrap: wrap; gap: 10px; }
-        }
+        .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        .tag { background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.85em; }
+        @media (max-width: 800px) { .content-wrapper { grid-template-columns: 1fr; } .navbar { flex-wrap: wrap; gap: 10px; } }
     </style>
 </head>
 <body>
@@ -89,31 +39,34 @@
     </nav>
 
     <div class="content-wrapper">
-        
         <aside class="card">
             <h1>Abderrahmane Benfanich</h1>
             <h2>PhD Candidate in Mathematics</h2>
-            
             <ul class="contact-list">
                 <li>📍 Ottawa, ON, Canada</li>
                 <li>📞 (873) 353-9127</li>
                 <li>✉️ <a href="mailto:abenf099@uottawa.ca">abenf099@uottawa.ca</a></li>
             </ul>
-            
-            <p style="font-size: 0.9em; color: var(--text-light); margin-top: 20px;">
-                Specializing in theoretical and numerical analysis of infiltration models. Passionate about teaching, competitive track and field, and visualizing mathematics.
-            </p>
+            <div style="margin-top: 25px;">
+                <h3 style="font-size: 1em; margin-bottom: 5px;">Technical Skills</h3>
+                <div class="tag-cloud">
+                    <span class="tag">Python</span><span class="tag">C++</span><span class="tag">FreeFem++</span><span class="tag">LaTeX</span><span class="tag">PDEs</span>
+                </div>
+            </div>
+            <div style="margin-top: 25px;">
+                <h3 style="font-size: 1em; margin-bottom: 5px;">Interests</h3>
+                <div class="tag-cloud">
+                    <span class="tag">Math Animations</span><span class="tag">Track & Field (Discus/Shot Put)</span>
+                </div>
+            </div>
         </aside>
 
         <main class="card">
             <h3 class="section-title">Welcome</h3>
-            <p>I am a PhD candidate at the University of Ottawa, focusing on the numerical analysis of partial differential equations. My current research centers on developing advanced finite element methods for the Richards equation to predict water movement in porous media.</p>
-            
-            <p>Beyond my academic research, I serve as a graduate mentor and Teaching Assistant, and I create mathematical animations to make complex concepts more accessible and engaging.</p>
-
-            <p>Please use the navigation menu above to explore my academic publications, teaching experience, and visual projects.</p>
+            <p>I am a PhD candidate in Mathematics and Statistics at the University of Ottawa. My academic focus is on the theoretical and numerical analysis of infiltration models.</p>
+            <p>Specifically, I develop advanced numerical methods for the Richards equation and its higher-order extensions. This work models water infiltration in porous media to better predict pollutant movement and prevent groundwater contamination, incorporating both diffusion and dispersion effects.</p>
+            <p>Alongside my research, I am actively involved in mathematical education as a Teaching Assistant, a tutor at the Math Help Center, and through my visual project, "Abdo does maths", where I animate abstract mathematical concepts.</p>
         </main>
-
     </div>
 
 </body>

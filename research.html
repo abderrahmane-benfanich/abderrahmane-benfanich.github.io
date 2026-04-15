@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abderrahmane Benfanich | Research & CV</title>
+    <style>
+        /* Exact same CSS as index.html */
+        :root { --primary: #8f001a; --bg-color: #f8f9fa; --text-main: #2c3e50; --text-light: #5a6c7d; --sidebar-bg: #ffffff; --border-color: #e1e8ed; }
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-main); background-color: var(--bg-color); margin: 0; padding: 20px; }
+        .navbar { background-color: var(--primary); max-width: 1100px; margin: 0 auto 20px auto; padding: 15px 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); display: flex; justify-content: center; gap: 30px; }
+        .navbar a { color: white; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
+        .navbar a:hover, .navbar a.active { background-color: rgba(255, 255, 255, 0.2); }
+        .content-wrapper { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 20px; } /* Single column for CV */
+        .card { background: var(--sidebar-bg); border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 40px; }
+        .section-title { color: var(--primary); font-size: 1.5em; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; margin-top: 30px; margin-bottom: 20px; }
+        .section-title:first-child { margin-top: 0; }
+        .item { margin-bottom: 25px; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
+        .item-title { font-weight: 600; font-size: 1.1em; color: var(--text-main); }
+        .item-subtitle { font-style: italic; color: var(--text-light); font-size: 0.95em; }
+        .item-date { color: var(--primary); font-size: 0.9em; font-weight: 500; text-align: right; }
+        .item p, .item ul { margin-top: 5px; font-size: 0.95em; color: #444; }
+        @media (max-width: 800px) { .item-header { flex-direction: column; } .item-date { text-align: left; } }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research & CV</a>
+        <a href="animations.html">Abdo Does Maths</a>
+    </nav>
+
+    <div class="content-wrapper">
+        <main class="card">
+            
+            <h3 class="section-title">Education</h3>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Ph.D. in Mathematics and Statistics</span>
+                    <span class="item-date">09/2024 - Present</span>
+                </div>
+                <div class="item-subtitle">University of Ottawa, ON</div>
+                <p>Focus: Theoretical and numerical analysis of infiltration models (Richards equations) and higher-order extensions using Finite Element Methods.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Master's in Mathematics and Statistics</span>
+                    <span class="item-date">09/2023 - 09/2024</span>
+                </div>
+                <div class="item-subtitle">University of Ottawa, ON</div>
+                <p>Fast-tracked to Ph.D. program due to research excellence. Report: <em>Theoretical and Numerical Analysis of Infiltration Models</em>.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor's in Mathematics and Applications</span>
+                    <span class="item-date">09/2020 - 06/2023</span>
+                </div>
+                <div class="item-subtitle">Cadi Ayyad University, Marrakech, Morocco</div>
+            </div>
+
+            <h3 class="section-title">Publications</h3>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Mathematical analysis for a doubly degenerate parabolic equation: Application to the Richards equation</span>
+                    <span class="item-date">Submitted 02/2026</span>
+                </div>
+                <div class="item-subtitle">Benfanich, A., Bourgault, Y., & Beljadid, A. — Journal of Differential Equations</div>
+                <p>arXiv:2602.19037</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">A finite element method using a bounded auxiliary variable for solving the Richards equation</span>
+                    <span class="item-date">Submitted 09/2025</span>
+                </div>
+                <div class="item-subtitle">Benfanich, A., Bourgault, Y., & Beljadid, A. — Journal of Computational Physics</div>
+            </div>
+
+            <h3 class="section-title">Academic Experience</h3>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Research & Teaching Assistant</span>
+                    <span class="item-date">06/2023 - Present</span>
+                </div>
+                <div class="item-subtitle">University of Ottawa, ON</div>
+                <ul>
+                    <li>Conducting theoretical and numerical research on porous media flow for graduate programs.</li>
+                    <li>Organize discussion groups, grade exams, and provide personalized academic support to students.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Math Help Center Tutor</span>
+                    <span class="item-date">Ongoing</span>
+                </div>
+                <div class="item-subtitle">University of Ottawa, ON</div>
+                <p>Provide drop-in support for students, facilitating collaborative learning and understanding of core concepts.</p>
+            </div>
+
+            <h3 class="section-title">Conferences & Specialized Training</h3>
+            <div class="item">
+                <ul>
+                    <li><strong>SIAM/CAIMS Joint Conference (07/2025-08/2025):</strong> Delivered a talk on research findings as part of a mini-symposium.</li>
+                    <li><strong>Compute Ontario School (06/2025-07/2025):</strong> Applied machine learning concepts (Artificial Neural Networks) to computational problems.</li>
+                    <li><strong>Summer School in Mathematics, Queen's University (06/2024-07/2024):</strong> Intensive coursework on circulation models, reinforcement learning, Riemann surface topology, and SDEs.</li>
+                </ul>
+            </div>
+
+            <h3 class="section-title">Awards & Distinctions</h3>
+            <div class="item">
+                <ul>
+                    <li><strong>International Doctoral Scholarship</strong> (09/2024) - Awarded for research excellence.</li>
+                    <li><strong>Admission Scholarship</strong> (09/2024) - Awarded upon admission to the Ph.D. program.</li>
+                    <li><strong>Supervisor's Scholarship</strong> (2023-2024)</li>
+                    <li><strong>Partial Exemption Scholarship</strong> (2023-2024) - Merit-based exemption for international francophone students.</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
