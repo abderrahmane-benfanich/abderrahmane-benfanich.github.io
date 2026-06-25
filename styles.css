@@ -198,6 +198,16 @@ p {
     background: var(--primary-dark);
 }
 
+.button-arxiv {
+    border-color: #7d0f17;
+    background: linear-gradient(135deg, #b31b1b 0%, #7d0f17 100%);
+    color: #ffffff;
+}
+
+.button-arxiv:hover {
+    background: linear-gradient(135deg, #c02424 0%, #8f001a 100%);
+}
+
 .section-title {
     margin: 0 0 16px;
     font-size: 1.35rem;
