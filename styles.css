@@ -525,6 +525,68 @@ p {
     text-align: center;
 }
 
+.tag-accepted {
+    background: #e6f4ea;
+    color: #137333;
+    border-color: #ceead6;
+}
+
+.tag-review {
+    background: #fef7e0;
+    color: #b06000;
+    border-color: #feefc3;
+}
+
+.reference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.reference-card {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px;
+    background: #fff;
+}
+
+.reference-card h3 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+    color: var(--primary-dark);
+}
+
+.reference-role {
+    font-size: 0.9rem;
+    color: var(--ink-2);
+    margin: 0 0 8px;
+}
+
+.reference-email {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.reference-email a {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.reference-email a:hover {
+    text-decoration: underline;
+}
+
+.nested-list {
+    margin-top: 6px;
+    padding-left: 20px;
+}
+
+.nested-list li {
+    margin-bottom: 4px;
+}
+
 a:focus-visible,
 button:focus-visible,
 iframe:focus-visible {
